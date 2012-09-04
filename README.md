@@ -63,4 +63,4 @@ Philip Tellis [@bluesmoon](https://twitter.com/bluesmoon) <philip@lognormal.com>
 
 License
 ---
-MIT License
+(Apache License)[LICENSE.md]
