@@ -1,0 +1,12 @@
+{
+	"name"        :  "line-input-stream",
+	"version"     :  "1.0.0",
+        "description" :  "Convert a Node.JS Readable Stream into a Line Buffered Input Stream",
+	"keywords"    :  ["stream", "input", "line", "line-buffered", "readable stream"],
+	"homepage"    :  "https://github.com/bluesmoon/node-line-input-stream",
+	"author"      :  "Philip Tellis <philip@bluesmoon.info> (http://bluesmoon.info/)",
+	"files"       :  ["lib/" ],
+	"main"        :  "lib/line-input-stream.js",
+	"repository"  :  { "type": "git", "url": "git://github.com/bluesmoon/node-line-input-stream.git" },
+	"engines"     :  { "node": ">=0.8.8" }
+}
