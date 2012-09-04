@@ -66,6 +66,7 @@ Caveats & Notes
 - Even though this is called `line-input-stream`, you can delimit by anything, so for example,
   setting delimiter to `"\n\n"` will read by paragraph (sort of).
 - You can set the delimiter to a regular expression, which let's you do cool things like drop multiple blank lines: `/[\r\n]+/`
+- All methods return `this`, so can be chained
 
 
 Copyright
