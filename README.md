@@ -57,6 +57,16 @@ or the `connect` event for [Net](http://nodejs.org/api/net.html) streams.
 A side effect of this is that you can add a listener for any junk string and `LineInputStream` will
 pretend that it worked.  The event listener may never be called though.
 
+Caveats & Notes
+---
+- Calling `pause()` might not stop `line` events from firing immediately.  It will stop reading of data
+  from the underlying stream, but any data that has already been read will still be split into lines and
+  a `line` event will be fired for each of them.
+- The delimiter is not included in the line passed to the `line` handler
+- Even though this is called `line-input-stream`, you can delimit by anything, so for example,
+  setting delimiter to `"\n\n"` will read by paragraph (sort of).
+
+
 Copyright
 ---
 Philip Tellis [@bluesmoon](https://twitter.com/bluesmoon) <philip@lognormal.com> 
